@@ -20,7 +20,11 @@ environ.Env.read_env(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 # Chargement des variables
 DEBUG = env('DEBUG')
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
+ALLOWED_HOSTS = [
+    'dull-carie-barbara-tech1969-e436bd5a.koyeb.app',
+    'localhost',
+    '127.0.0.1'
+]
 
 # Debugging
 print("DEBUG =", DEBUG)
